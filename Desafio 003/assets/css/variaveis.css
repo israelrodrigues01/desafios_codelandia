@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+*
+{
+	margin: 0; padding: 0;
+	font-family: sans-serif;
+	outline: none;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+:root
+{
+	--family-title: 'Merriweather', serif;
+	--family-text: 'Lato', sans-serif;
+	
+	--green: #04C35C;
+	--purple: #2B6CB0;
+	--while: #FFFFFF;
+	--while-2: #F7FAFC;
+	--gray: #E8E8E8;
+	--gray-dark: #1A202C;
+
+	--size-title: 26px;
+	--size-text: 16px;
+	--size-subtext: 14px;
+}
+
+body
+{
+	background: var(--while);
+	color: var(--gray-dark);
+}
+
+.flex
+{
+	display: flex;
+}
+.flex-c-c
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.font-16
+{
+	font-family: var(--family-text);
+	font-size: var(--size-text);
+	color: var(--gray-dark);
+	font-weight: 400;
+}
+.font-16 a
+{
+	color: var(--purple);
+}
+.font-14
+{
+	font-family: var(--family-text);
+	font-size: var(--size-subtext);
+	color: var(--gray-dark);
+	font-weight: 400;
+}
+.font-14 a
+{
+	color: var(--purple);
+}
+
+.text-c
+{
+	text-align: center;
+}

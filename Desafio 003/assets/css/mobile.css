@@ -1,0 +1,12 @@
+@media (max-width: 830px)
+{
+	.page_login .content-img
+	{
+		display: none;
+	}
+	.page_login .content-conteudo
+	{
+		flex: 0 1 100vw;
+		padding: 0 20px;
+	}
+}

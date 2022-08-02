@@ -1,0 +1,100 @@
+.page_login
+{
+	min-height: 100vh;
+}
+.page_login .content-img
+{
+	flex: 0 1 50vw;
+	background: var(--while-2);
+}
+.page_login .content-img img
+{
+	max-width: 400px;
+}
+.page_login .content-conteudo
+{
+	flex: 0 1 50vw;
+}
+
+.content-form
+{
+	max-width: 350px;
+}
+.form-header
+{
+	margin-bottom: 39px;
+}
+.form-header h1
+{
+	font-family: var(--family-title);
+	font-size: var(--size-title);
+	font-weight: 700;
+	margin-top: 7px;
+}
+.form-header p
+{
+	font-family: var(--family-title);
+	font-size: var(--size-text);
+	font-weight: 400;
+}
+
+.form-main
+{
+	margin-bottom: 62px;
+}
+.form-main .row,
+.form-main .row-btn
+{
+	flex-direction: column;
+	gap: 11px;
+}
+.form-main .row label,
+.form-main .row input
+{
+	font-family: var(--family-text);
+	font-size: var(--size-text);
+	font-weight: 400;
+}
+.form-main .row input
+{
+	border: 1px solid var(--gray);
+	padding: 17px 20px 16px 20px;
+	border-radius: 5px;
+}
+.form-main .row + .row
+{
+	margin: 11px 0 28px 0;
+}
+.form-main .row-desc
+{
+	flex-direction: initial;
+	justify-content: space-between;
+}
+.form-main .row-desc input
+{
+	margin-right: 11px;
+}
+
+.form-main .row-btn button
+{
+	padding: 15px 0;
+	border: none;
+	border-radius: 5px;
+	color: var(--while);
+	font-family: var(--family-text);
+	font-size: var(--size-text);
+	font-weight: 700;
+	cursor: pointer;
+}
+.form-main .row-btn button[type="submit"]
+{
+	background: var(--green);
+}
+.form-main .row-btn button[type="button"]
+{
+	background: var(--gray-dark);
+}
+.form-main .row-btn button[type="button"] img
+{
+	margin-right: 15px;
+}
