@@ -1,0 +1,94 @@
+.bg
+{
+	background: rgba(0, 0, 0, .7) url(../img/bg.png) no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: multiply;
+	height: 378px;
+}
+.content-infor
+{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	color: var(--branco);
+}
+.content-infor h1
+{
+	font-size: var(--font-title);
+	margin-bottom: 19px;
+}
+.content-infor p
+{
+	font-size: var(--font-2);
+	width: 460px;
+	line-height: 1.8;
+}
+
+.cabecalho-desc
+{
+	background: var(--preto);
+	color: var(--branco);
+	font-size: var(--font-1);
+	padding: 15px 0;
+}
+.cabecalho-title
+{
+	background: var(--branco);
+	color: var(--preto);
+	font-size: var(--font-3);
+	padding: 15px 0;
+}
+
+main .title
+{
+	padding: 58px 0;
+	line-height: 2;
+}
+main .title h1
+{
+	font-size: var(--font-title);
+}
+main .title p
+{
+	font-size: var(--font-2);
+}
+main .boxs
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 40px 13px;
+	margin-bottom: 100px;
+}
+main .boxs .box
+{
+	display: grid;
+	place-items: center;
+	width: 300px;
+	height: 302px;
+	background: var(--branco-dois);
+	cursor: pointer;
+}
+main .boxs .box:hover img
+{
+	transform: scale(1.2);
+}
+
+footer
+{
+	background: var(--preto); 
+	color: var(--branco);
+	padding: 15px 0;
+	font-size: var(--font-2);
+}
+
+
+@media(max-width: 1200px)
+{
+	.content,
+	.content-infor
+	{
+		padding: 0 30px;
+	}
+}
