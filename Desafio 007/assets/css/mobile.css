@@ -1,0 +1,30 @@
+@media (max-width: 1200px)
+{
+	.content-width
+	{
+		padding: 20px;
+	}
+}
+@media (max-width: 1030px)
+{
+	.header-main.flex
+	{
+		align-items: center;
+		justify-content: center;
+	}
+	.hader-main-conteudo .icons
+	{
+		text-align: center;
+	}
+}
+@media (max-width: 400px)
+{
+	.menu-text
+	{
+		display: none;
+	}
+	.hader-main-conteudo .conteudo-title h1
+	{
+		font-size: 15vw;
+	}
+}

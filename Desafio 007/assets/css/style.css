@@ -1,0 +1,77 @@
+header
+{
+	width: 100%; min-height: 100vh;
+	background: url(../img/bg.png) no-repeat center/cover;
+}
+
+.header-menu
+{
+	padding: 38px 0;
+	color: var(--while);
+}
+.header-menu span
+{
+	font-size: var(--size-subtitle);
+	font-weight: 700;
+}
+
+.header-main
+{
+	width: 100%;
+	flex-wrap: wrap-reverse;
+	gap: 20px;
+}
+
+.hader-main-conteudo .conteudo-title h1
+{
+	-webkit-text-stroke: 2px var(--while);
+	color: transparent;	
+	font-size: var(--size-title);
+	font-weight: 700;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
+.header-main .hader-main-img
+{
+	flex: 0 1 380px;
+}
+.header-main .hader-main-img img
+{
+	width: 100%;
+	animation: flutuar 5s ease-in-out infinite;
+}
+
+.conteudo-cards
+{
+	flex-wrap: wrap;
+	gap: 30px;
+	margin-bottom: 80px;
+}
+.conteudo-cards .card .card-img
+{
+	position: relative;
+	z-index: 1;
+}
+.conteudo-cards .card .card-img .img-border
+{
+	position: absolute;
+	left: -10px; top: -10px;
+	z-index: -1;
+}
+.conteudo-cards .card .card-text
+{
+	text-align: center;
+	margin-top: 12px;
+	color: var(--red-light);
+	font-size: var(--size-text);
+	font-weight: 700;
+}
+.hader-main-conteudo .icons
+{
+	color: var(--while);
+	font-size: 2rem;
+}
+.hader-main-conteudo .icons i + i
+{
+	margin-left: 20px;
+}
