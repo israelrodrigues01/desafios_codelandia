@@ -1,0 +1,137 @@
+@use '../../styles/mixins'
+@use '../../styles/var'
+
+main
+	section
+		position: relative
+		padding: 100px 0
+
+		.img4
+			left: 0px
+			top: -60px
+
+		.img5
+			left: 10px
+			bottom: -20px
+
+		.img6
+			left: 300px
+			top: 40px
+			@include mixins.tela-mobile(1200px)
+				left: 15%
+
+		.img7
+			right: 130px
+			top: 50px
+
+		.img8
+			right: 50px
+			bottom: 180px
+
+		button
+			@include mixins.button
+
+		.titulo
+			@include mixins.texto(var.$font-title, var.$font-semibold, var.$gray-200)
+			text-align: center
+
+		.content-width
+			max-width: 1200px
+			margin: 0 auto
+			@include mixins.tela-mobile(1200px)
+				padding: 0 20px
+				
+			.content-cards
+				margin-top: 100px
+				display: flex
+				flex-wrap: wrap
+				justify-content: center
+				gap: 100px 32px
+
+				&_card
+					@include mixins.center
+					position: relative
+					width: 256px
+					height: 275px
+					border-radius: 25px
+					background: var.$pink
+					text-align: center
+					z-index: 1
+
+					.card-image
+						position: absolute
+						top: 0
+						transform: translateY(-50%)
+
+						.img-coracao
+							position: absolute
+							top: 50%
+							right: -50px
+							padding: 10px
+							background: var.$pink
+							border: 2px solid var.$red
+							border-radius: 15px
+							transform: translateY(-50%)
+
+					.card-content
+						h3
+							@include mixins.texto(var.$font-subtitle, var.$font-semibold, var.$gray-200)
+							margin-bottom: 10px
+							margin-top: 25px
+						p
+							@include mixins.texto(var.$font-text, var.$font-regular, var.$gray)
+							margin-bottom: 20px
+							max-width: 180px
+						p.preco
+							@include mixins.texto(var.$font-title, var.$font-semibold, var.$gray-200)
+							margin-bottom: 0
+
+
+					button
+						position: absolute
+						bottom: 0
+						transform: translateY(50%)
+
+	.section-sobre
+		background: var.$white-200
+
+		.content-sobre
+			display: flex
+			align-items: center
+			justify-content: space-between
+			gap: 20px
+
+			@include mixins.tela-mobile(900px)
+				justify-content: center
+				text-align: center
+
+			&_img
+				position: relative
+				@include mixins.tela-mobile(900px)
+					display: none
+
+				.img-flutuante
+					top: 30px
+					left: -50px
+
+			&_conteudo
+				position: relative
+				max-width: 458px
+
+				.titulo
+					text-align: inherit
+
+				p
+					@include mixins.texto(var.$font-text, var.$font-regular, var.$gray-200)
+					margin: 24px 0 36px
+
+				.img2
+					right: 0px
+					top: -160px
+
+				.img3
+					right: 0px
+					bottom: -200px
+					@include mixins.tela-mobile(900px)
+						right: -100px
+						bottom: -120px

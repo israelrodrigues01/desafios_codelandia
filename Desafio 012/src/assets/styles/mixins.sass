@@ -1,0 +1,51 @@
+@use 'var'
+
+// Centralizar
+@mixin center
+	display: grid
+	place-items: center
+
+@mixin texto($size, $weight, $color)
+	font-size: $size
+	color: $color
+	font-weight: $weight
+
+	.span-yellow
+		color: var.$yellow
+	.span-red
+		color: var.$red
+	.span-green
+		color: var.$green
+
+@mixin button
+	padding: 10px 30px
+	font-size: var.$font-btn
+	font-weight: var.$font-semibold
+	color: var.$gray-200
+	background: var.$yellow
+	border: none
+	border-radius: 25px
+	cursor: pointer
+	transition: letter-spacing .3s ease-in-out
+	&:hover
+		letter-spacing: 1px
+
+
+@mixin girar
+	@keyframes girar
+		from
+			transform: rotate(360deg)
+
+@mixin flutuar
+	@keyframes flutuar
+		0%
+			transform: translateY(0)
+		100%
+			transform: translateY(0)
+		50%
+			transform: translateY(-20px)
+
+
+@mixin tela-mobile($largura)
+	@media(max-width: $largura)
+		@content

@@ -1,0 +1,28 @@
+@use './assets/styles/var'
+@use './assets/styles/mixins'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background: var.$white
+    font-family: var.$font-principal
+
+footer
+    @include mixins.texto(var.$font-text, var.$font-regular, var.$gray-200)
+    text-align: center
+    padding: 30px 20px
+    
+    a
+        color: var.$red
+        text-decoration: none
+        text-transform: uppercase
+
+.img-flutuante
+    position: absolute
+    animation: flutuar 5s ease-in-out infinite
+    @include mixins.flutuar
+    @include mixins.tela-mobile(700px)
+        display: none
