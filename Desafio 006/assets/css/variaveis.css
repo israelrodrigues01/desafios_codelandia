@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap');
+
+*
+{
+	margin: 0; padding: 0;
+	font-family: 'B612', sans-serif;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+:root
+{
+	--yellow: #FFA800;
+	--while: #FFFFFF;
+	--blue: #0072D2;
+	--dark: #131318;
+	--gay: #19191F;
+
+	--size-title: 96px;
+	--size-subtitle: 24px;
+	--size-text: 20px;
+	--size-btn: 16px;
+}
+
+.flex
+{
+	display: flex;
+}
+.flex-c-c
+{
+	align-items: center;
+	justify-content: center;
+}
+.flex-c-b
+{
+	align-items: center;
+	justify-content: space-between;
+}
+
+.text-center
+{
+	text-align: center;
+}
+
+.btn
+{
+	padding: 15px 27px;
+	background: var(--color);
+	border: 1px solid var(--border);
+	color: var(--while);
+	text-transform: uppercase;
+}

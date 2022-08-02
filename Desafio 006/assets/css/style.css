@@ -1,0 +1,77 @@
+header
+{
+	width: 100%; min-height: 100vh;
+	background: rgba(0, 0, 0, .7) url(../img/image.png) no-repeat center/cover;
+	background-blend-mode: multiply;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.header-title
+{
+	color: var(--while);
+	text-transform: uppercase;
+	padding-top: 45px;
+	line-height: 1.5;
+	font-weight: 700;
+}
+.header-title h1
+{
+	font-size: var(--size-title);
+}
+.header-title h2
+{
+	font-size: var(--size-text);
+}
+
+.header-main
+{
+	gap: 50px;
+	flex-wrap: wrap;
+	color: var(--while);
+	padding: 0 20px 90px 20px;
+}
+.header-main .header-main-cotent
+{
+	max-width: 722px;
+	display: grid;
+	grid-template-areas: 
+		"header"
+		"main"
+		"footer";
+}
+
+.cotent-desc
+{
+	grid-area: header;
+	line-height: 1.5;
+	font-size: var(--size-text);
+}
+
+.cotent-infor
+{
+	grid-area: main;
+	flex-wrap: wrap;
+	gap: 10px;
+	padding: 45px 0;
+}
+.cotent-infor span
+{
+	font-size: var(--size-subtitle);
+	font-weight: 700;
+}
+
+.cotent-infor-time img
+{
+	margin-right: 10px;
+}
+.cotent-infor .cotent-infor-stars i
+{
+	color: var(--color);
+}
+
+.cotent-buttons
+{
+	grid-area: footer;
+	gap: 20px;
+	flex-wrap: wrap;
+}

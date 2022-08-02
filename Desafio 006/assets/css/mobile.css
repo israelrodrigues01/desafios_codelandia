@@ -1,0 +1,44 @@
+@media (max-width: 480px)
+{
+	.header-main
+	{
+		padding: 0;
+	}
+	.header-main .header-main-cotent
+	{
+		grid-template-areas: 
+			"main"
+			"footer"
+			"header";
+	}
+
+	.cotent-desc
+	{
+		background: var(--dark);
+		text-align: justify;
+		padding: 0 20px;
+	}
+	.cotent-desc p
+	{
+		border-top: 1px solid rgba(255, 255, 255, .2);
+		padding: 20px 0;
+	}
+
+	.cotent-infor
+	{
+		padding: 20px;
+	}
+	.cotent-infor span
+	{
+		font-size: var(--size-text);
+	}
+
+	.cotent-buttons
+	{
+		background: var(--dark);
+		padding: 20px 0;
+		border-radius: 20px 20px 0 0;
+		justify-content: center;	
+	}
+
+}
