@@ -1,0 +1,74 @@
+@use 'variaveis'
+
+@mixin width-content
+	max-width: 1200px
+	margin: auto
+	position: relative
+
+@mixin flex-center
+	display: flex
+	align-items: center
+	justify-content: center
+
+@mixin flex-between
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+@mixin border-header
+	border: 2px solid variaveis.$white-400
+	border-radius: 30px
+
+@mixin texto($font, $size, $weight, $color)
+	font-family: #{$font}
+	font-size: #{$size}
+	font-weight: #{$weight}
+	color: #{$color}
+
+@mixin btn($bg, $color, $bd-color)
+	font-family: variaveis.$font-secundaria
+	font-size: 18px
+	font-weight: variaveis.$font-medium
+	text-transform: uppercase
+	background-color: #{$bg}
+	color: #{$color}
+	border: 2px solid #{$bd-color}
+	padding: 10px 20px
+	border-radius: 10px
+
+@mixin imagem-left($top, $left)
+	position: absolute
+	top: #{$top}
+	left: #{$left}
+	width: 200px
+
+@mixin animacao($name, $duration, $ease, $time)
+	animation: $name $duration $ease $time
+
+@mixin keyframes
+	@keyframes flutuar
+		0%
+			transform: translateY(0)
+		100%
+			transform: translateY(0)
+		50%
+			transform: translateY(-20px)
+
+@mixin imagem-right($top, $right)
+	position: absolute
+	top: #{$top}
+	right: #{$right}
+	width: 200px
+
+
+@mixin mobile
+	@media (max-width: 1200px)
+		@content
+
+@mixin mobile-800
+	@media (max-width: 800px)
+		@content
+
+@mixin mobile-650
+	@media (max-width: 650px)
+		@content
