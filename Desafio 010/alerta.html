@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/mobile.css">
+	<link rel="stylesheet" href="assets/css/variaveis.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+
+    <style>
+
+        .content-conteudo
+        {
+            min-height: calc(100vh - 100px);
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .conteudo-text{ flex: 0 1 495px; }
+        .conteudo-text p{ margin-bottom: 50px; }
+        .conteudo-text .btn
+        {
+	        font-family: var(--font-title);
+            padding: 10px 25px;
+            border-radius: 5px;
+        }
+
+        .conteudo-img{ flex-direction: column; }
+        .conteudo-img img{ max-width: 100%; }
+        .conteudo-img .text-img{ max-width: 298px; }
+        @media (max-width: 960px)
+        {
+            .conteudo-text, .conteudo-img{ flex: 0 1 100%; }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <header>
+		<div class="content-width">	
+			<div class="header-menu flex f-c-b">
+				<span class="logo">Naped</span>
+				<div class="menu-navbar flex f-c-c">		
+					<nav class="navbar">
+						<a href="#404">404</a>
+						<a href="#404">404</a>
+						<a href="#404">404</a>
+						<a href="#404">404</a>
+						<a href="#404">404</a>
+					</nav>
+					<div class="menu-btn"><i class='bx bx-menu'></i></div>
+				</div>
+			</div>
+		</div>
+	</header>
+    <main>
+        <div class="content-width">
+            <section class="content-conteudo flex f-c-b">
+                <div class="section-header conteudo-text">
+                    <h1 class="title">Tenho más notícias para você!</h1>
+                    <p>A página que você está procurando pode ter sido removida ou está temporariamente indisponível.</p>
+                    <a href="index.html" class="btn">Voltar a home</a>
+                </div>
+                <div class="conteudo-img flex f-c-c">
+                    <img src="assets/img/404.png" alt="">
+                    <div class="section-header text-img text-center">
+                        <p>Ups! Você chegou no espaço... volte para o mundo nerd!</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+<script>
+	
+    const menuBtn = document.querySelector('.menu-btn');
+    const navbar = document.querySelector('.navbar');
+        
+    menuBtn.onclick = () => { navbar.classList.toggle('active'); }
+</script>
+</body>
+</html>

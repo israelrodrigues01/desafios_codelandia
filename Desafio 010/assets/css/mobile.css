@@ -1,0 +1,71 @@
+@media (max-width: 1200px)
+{
+	.content-width
+	{
+		padding: 0 20px;
+	}
+}
+
+@media (max-width: 980px)
+{
+	main aside
+	{
+		display: none;
+	}
+}
+
+
+@media (max-width: 760px)
+{
+	.menu-navbar .navbar
+	{
+		position: absolute;
+		top: 100%; left: 0; width: 100%;
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+		transition: clip-path .5s ease-in-out;
+		background: var(--dark);
+		z-index: 1;
+	}
+	.menu-navbar .navbar.active
+	{
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+	.menu-navbar .navbar a
+	{ 
+		position: relative;
+		display: block; 
+		margin: 0 0 20px 4px;
+		padding-left: 10px;
+	}
+	.menu-navbar .navbar a:before
+	{
+		position: absolute;
+		content: '';
+		width: 3px; height: 0;
+		bottom: 0; left: -5px;
+		background: var(--purple);
+		transition:  height .5s ease-in-out;
+	}
+	.menu-navbar .navbar a:hover:before,
+	.menu-navbar .navbar a.active:before
+	{
+		width: 3px; height: 100%; top: 0; left: -5px;
+	}
+	.menu-navbar .menu-btn{ display: initial;}
+	.menu-navbar .btn-minha_conta
+	{
+		position: absolute;
+		width: 100%;
+		left: 0; top: 100%; 
+		text-align: center;
+	}
+
+	.card-principal .cards-text{ font-size: 1.3rem;	}
+
+	.card-noticia{ flex-direction: column; }
+}
+
+@media (max-width: 400px)
+{
+	.card-principal .cards-text{ font-size: 1rem; }
+}
