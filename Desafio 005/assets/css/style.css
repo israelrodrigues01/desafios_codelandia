@@ -1,0 +1,68 @@
+body
+{
+	width: 100%; min-height: 100vh;
+  	background: var(--gradient);
+}
+
+.header-menu
+{
+	padding-top: 24px;
+}
+
+.header-menu-navbar
+{
+	color: var(--while);
+	font-size: 2rem;
+}
+.header-menu-navbar i
+{
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.header-main
+{
+	flex-wrap: wrap-reverse;
+}
+.header-main-content
+{
+	flex: 0 1 440px;
+	color: var(--while);
+}
+
+.header-main-content h2
+{
+	font-size: var(--size-subtitle);
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 14px;
+}
+.header-main-content h1
+{
+	font-size: var(--size-title);
+	font-weight: 900;
+	line-height: 1;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+.header-main-content p
+{
+	font-size: var(--size-text);
+	font-weight: 400;
+	margin-bottom: 54px;
+}
+
+.header-main-cotent-buttons .btn:nth-child(1)
+{
+	background: var(--green);
+}
+.header-main-cotent-buttons .btn:nth-child(2)
+{
+	background: transparent;
+	margin-left: 10px;
+}
+
+.header-main-img
+{
+	animation: flutuar 5s ease-in-out infinite;
+}
