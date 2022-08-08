@@ -1,1 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@use 'var'
+@use 'mixins'
+
+// Content
+.content
+	max-width: 1200px
+	margin: 0 auto
+
+	.content-title
+		@include mixins.texto(var.$font-title, var.$font-semibold, var.$black-light)
+
+// Menu
+.menu
+	@include mixins.flex-c-b
+	
+	&-logo
+		@include mixins.flex-c-b
+		gap: 12px
+
+		span
+			@include mixins.texto(var.$font-logo, var.$font-medium, var.$black-light)
+
+
+button.btn
+	background: var.$red
+	color: var.$white
+	padding: 12px 32px
