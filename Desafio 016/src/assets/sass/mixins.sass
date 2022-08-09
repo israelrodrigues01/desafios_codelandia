@@ -9,3 +9,8 @@
 	display: flex
 	align-items: center
 	justify-content: space-between
+
+
+@mixin mobile($largura)
+	@media (max-width: $largura)
+		@content

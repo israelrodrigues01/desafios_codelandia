@@ -1,0 +1,15 @@
+@use 'var'
+@use 'mixins'
+
+.card
+	width: 198px
+	text-align: center
+
+	h3
+		@include mixins.texto(var.$font-subtitle, var.$font-medium, var.$black-light)
+		margin-bottom: 10px
+
+	p
+		@include mixins.texto(var.$font-text, var.$font-medium, var.$black-light)
+		line-height: 24px
+

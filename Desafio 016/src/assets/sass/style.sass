@@ -1,15 +1,57 @@
 @use 'var'
 @use 'mixins'
 
-// Content
+
+
+header
+	min-height: 100vh
+	padding: 30px 0
+
+	nav a
+		margin-left: 20px
+		@include mixins.texto(var.$font-text, var.$font-medium, var.$black-light)
+
+.acessorios
+	padding: 80px 0
+	
+	&-title
+		max-width: 477px
+		margin: 0 auto
+		text-align: center
+
+		h1
+			@include mixins.texto(var.$font-title, var.$font-semibold, var.$black-light)
+			margin-bottom: 20px
+
+	&-cards
+		@include mixins.flex-c-b
+		justify-content: center		
+		flex-wrap: wrap
+		gap: 70px
+
+footer
+	padding: 20px 0
+
+	nav
+		display: flex
+		gap: 20px
+
+		a
+			@include mixins.flex-c-b
+			padding: 10px
+			border-radius: 50%
+			background: var.$pink
+
+// Global
 .content
 	max-width: 1200px
 	margin: 0 auto
+	@include mixins.mobile(1200px)
+		padding: 0 30px
 
 	.content-title
 		@include mixins.texto(var.$font-title, var.$font-semibold, var.$black-light)
 
-// Menu
 .menu
 	@include mixins.flex-c-b
 	
@@ -20,8 +62,43 @@
 		span
 			@include mixins.texto(var.$font-logo, var.$font-medium, var.$black-light)
 
+.bg-pink
+	background: var.$pink
 
-button.btn
+.section-content
+	@include mixins.flex-c-b
+	flex-wrap: wrap
+	padding: 80px 0
+	
+	.section-conteudo
+		max-width: 488px
+
+		h1
+			@include mixins.texto(var.$font-title, var.$font-semibold, var.$black-light)
+			line-height: 52px
+		
+		p
+			margin: 24px 0 40px
+			@include mixins.texto(var.$font-text, var.$font-medium, var.$black-light)
+
+	.section-img
+		max-width: 600px
+		img
+			width: 100%
+			height: 100%
+
+.section-content.reverse
+	flex-direction: row-reverse
+
+a.btn
+	@include mixins.flex-c-b
+	justify-content: center
 	background: var.$red
 	color: var.$white
 	padding: 12px 32px
+	width: 250px
+	border-radius: 8px
+	border: none
+
+	img
+		margin-right: 10px
