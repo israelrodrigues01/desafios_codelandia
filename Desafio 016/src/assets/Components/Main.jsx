@@ -14,20 +14,20 @@ function Main(){
 		},
 		{
 			id: 2, 
-			title: 'Presentes', 
-			texto: 'Eles são os melhores presentes que existem.', 
+			title: 'Enfeites', 
+			texto: 'Dê uma decoração.', 
 			image: 'src/assets/img/giving2.png',
 		},
 		{
 			id: 3, 
-			title: 'Presentes', 
-			texto: 'Eles são os melhores presentes que existem.', 
+			title: 'Doces', 
+			texto: 'Aproveite os doces natalinos.', 
 			image: 'src/assets/img/giving3.png',
 		},
 		{
 			id: 4, 
-			title: 'Presentes', 
-			texto: 'Eles são os melhores presentes que existem.', 
+			title: 'Muito amor', 
+			texto: 'Aproveite os sentimentos que duram para sempre.', 
 			image: 'src/assets/img/giving4.png',
 		},
 	]
@@ -57,13 +57,13 @@ function Main(){
 		</div>
 
 		<div className="acessorios-conteudo bg-pink">
-			<div className="content">
+			<div className="content" id='doacao'>
 				<SectionContent 
 					className="section-content reverse"
-					titulo="Feliz Natal e Feliz Ano Novo!"
-					desc="Nessas festas de fim de ano mande um presente para a pessoa amada e compartilhe a alegria do Natal."
-					btnText="Fazer uma doação"
-					img="src/assets/img/send.png"				
+					titulo="Comemore com muito amor!"
+					desc="Nestes feriados, festeje com muito amor e paz, oferecendo muitas bênçãos aos nossos entes queridos, amigos e vizinhos, desejando-lhes um Feliz Natal."
+					btnText="Fazer doação"
+					img="src/assets/img/shared.png"				
 				/>
 			</div>
 		</div>

@@ -3,6 +3,13 @@ import SectionContent from './SectionContent'
 
 
 function Header(){
+
+	const toggleBtn = () =>{
+		const nav = document.querySelector('.menu nav')
+		nav.classList.toggle('active')
+	}
+
+
 	return (
 		<header className="header bg-pink" id="inicio">
 			<div className="content">
@@ -11,9 +18,12 @@ function Header(){
 					<nav>
 						<a href="#inicio">Início</a>
 						<a href="#acessorios">Acessórios</a>
-						<a href="#">Doação</a>
-						<a href="#">Contato</a>
+						<a href="#doacao">Doação</a>
+						<a href="#contato">Contato</a>
 					</nav>
+					<div className='menu-btn' onClick={toggleBtn}>
+						<img src="src/assets/img/hamburguer.png" alt="" />
+					</div>
 				</div>
 
 
