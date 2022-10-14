@@ -3,12 +3,22 @@ import SectionContent from './SectionContent'
 
 
 function Header(){
-
 	const toggleBtn = () =>{
 		const nav = document.querySelector('.menu nav')
-		nav.classList.toggle('active')
-	}
+		const navLink = document.querySelectorAll('.menu nav a')
 
+		nav.classList.toggle('active')
+
+		navLink.forEach((link) => link.addEventListener('click', () =>{
+			nav.classList.remove('active')
+		}))
+	}
+	// const removeClass = () =>{
+	// 	const nav = document.querySelector('.menu nav')
+
+	// 	nav.classList.remove('active')
+	// 	console.log("Nav active")
+	// }
 
 	return (
 		<header className="header bg-pink" id="inicio">

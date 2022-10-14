@@ -1,0 +1,20 @@
+.header-main
+{
+    background: #EFF8FF;
+}
+
+.header-main-title h1
+{
+    font-size: 48px;
+    color: #293145;
+}
+
+.header-main-title button
+{
+    font-size: 20px;
+}
+
+.card-img-top
+{
+    width: 100px;
+}

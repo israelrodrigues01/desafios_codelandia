@@ -18,6 +18,7 @@ function SectionContent({className, titulo, desc, btnText, img}){
 		</section>
 
 	)
+	
 }
 
 export default SectionContent

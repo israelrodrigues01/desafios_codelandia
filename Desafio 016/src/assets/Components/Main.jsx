@@ -45,6 +45,7 @@ function Main(){
 
 					{inforCard.map(card =>(
 						<Card 
+							key={card.id}
 							id={card.id} 
 							img={card.image} 
 							titulo={card.title} 
@@ -58,7 +59,7 @@ function Main(){
 
 		<div className="acessorios-conteudo bg-pink">
 			<div className="content" id='doacao'>
-				<SectionContent 
+				<SectionContent
 					className="section-content reverse"
 					titulo="Comemore com muito amor!"
 					desc="Nestes feriados, festeje com muito amor e paz, oferecendo muitas bênçãos aos nossos entes queridos, amigos e vizinhos, desejando-lhes um Feliz Natal."

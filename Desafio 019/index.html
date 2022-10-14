@@ -1,13 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-light py-2">
+                <div class="navbar-brand">
+                    <a href="#">
+                        <img src="assets/img/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="navbar-nav">
+                    <div class="d-flex gap-4 h6">
+                        <a href="#" class="nav-link">Funcionalidades</a>
+                        <a href="#" class="nav-link">App</a>
+                        <a href="#" class="nav-link">Planos</a>
+                        <a href="#" class="nav-link">Contato</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="wrapper header-main">
+            <div class="container">
+                <div class="row d-flex align-items-center justify-cotent-between">
+                    <div class="col header-main-title">
+                        <h1>Rachi,</br> é tudo que você precisa em um só lugar.</h1>
+                        <button
+                            class="bg-primary-blue text-white border-0 rounded-pill mt-4 px-4 py-2">Cadastre-se</button>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <img src="assets/img/image.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main py-4">
+        <section class="main-section">
+            <div class="conatiner">
+                <div class="section-title text-center mb-5">
+                    <h2>Como funciona</h2>
+                </div>
+                <div class="row d-flex align-items-center justify-content-center m-0">
+                    <div class="card border-0 p-0" style="width: 250px;">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="assets/img/icon-user.png" alt="icone de usuário">
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="card-title h4">Crie conexões</div>
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consecteteu.</p>
+                        </div>
+                    </div>
+                    <div class="card border-0 p-0" style="width: 250px;">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="assets/img/icon-loock.png" alt="icone de usuário">
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="card-title h4">Crie conexões</div>
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consecteteu.</p>
+                        </div>
+                    </div>
+                    <div class="card border-0 p-0" style="width: 250px;">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="assets/img/icon-emoi.png" alt="icone de usuário">
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="card-title h4">Compartilhamento</div>
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consecteteu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
 </html>
