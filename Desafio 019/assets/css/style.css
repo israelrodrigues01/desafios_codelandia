@@ -1,20 +1,130 @@
-.header-main
-{
-    background: #EFF8FF;
-}
-
-.header-main-title h1
-{
+.header-main-title h1 {
     font-size: 48px;
     color: #293145;
 }
 
-.header-main-title button
-{
+.header-main-title button {
     font-size: 20px;
 }
 
-.card-img-top
-{
+.card-img-top {
     width: 100px;
+}
+
+.col.app-text {
+    max-width: 444px;
+}
+
+.main .section-app .app-text p {
+    font-size: 16px;
+}
+
+.main .card.card-primary {
+    background: #293145;
+    color: #fff;
+}
+
+#card-primary {
+    position: relative;
+}
+
+#card-primary::after {
+    content: attr(data-situation);
+    position: absolute;
+    padding: 5px 30px;
+    border-radius: 60px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+    background: rgb(var(--bs-primary-hex));
+    color: #fff;
+    font-size: 12px;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main .card.card-secondary {
+    background: #EFF8FF;
+}
+
+.main .card .title-price sup {
+    font-size: 18px;
+}
+
+.main .card .title-price span {
+    font-size: 20px;
+}
+
+.main .section-contact {
+    min-height: 382px;
+    background: url(../img/fundo_contato.png) center/cover;
+    background-repeat: no-repeat;
+    color: #EFF8FF;
+}
+
+.main .section-contact form input[type='email'] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #EFF8FF;
+    width: 300px;
+    color: #EFF8FF;
+    padding-left: 0;
+    padding-bottom: 10px;
+    outline: none;
+}
+
+.main .section-contact form input[type='submit'] {
+    width: 100px;
+}
+
+.main .section-contact form input::placeholder {
+    color: #EFF8FF;
+}
+
+
+.bg-section-blue {
+    background: #EFF8FF;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 990px) {
+
+    .header-main-title h1 {
+        font-size: 38px
+    }
+
+}
+
+@media(max-width: 770px) {
+
+    .wrapper .col.d-flex.justify-content-end,
+    .section-app .col.app-img.d-flex.justify-content-end {
+        justify-content: center !important;
+        flex: 1 0 100%;
+    }
+
+}
+
+@media(max-width: 710px) {
+
+    .wrapper .col.d-flex.justify-content-end img,
+    .section-app .col.app-img.d-flex.justify-content-end img {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 440px) {
+
+    .main .section-contact form input[type='email'],
+    .main .section-contact form input[type='submit'] {
+        width: 100%;
+    }
+
 }

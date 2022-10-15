@@ -13,23 +13,38 @@
 <body>
     <header>
         <div class="container">
-            <nav class="navbar navbar-light py-2">
-                <div class="navbar-brand">
-                    <a href="#">
-                        <img src="assets/img/logo.png" alt="Logo">
-                    </a>
-                </div>
-                <div class="navbar-nav">
-                    <div class="d-flex gap-4 h6">
-                        <a href="#" class="nav-link">Funcionalidades</a>
-                        <a href="#" class="nav-link">App</a>
-                        <a href="#" class="nav-link">Planos</a>
-                        <a href="#" class="nav-link">Contato</a>
+            <nav class="navbar navbar-expand-lg navbar-light py-3">
+                <div class="container-fluid">
+                    <div class="navbar-brand">
+                        <a href="#">
+                            <img src="assets/img/logo.png" alt="Logo">
+                        </a>
                     </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Funcionalidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">App</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Planos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </div>
-        <div class="wrapper header-main">
+        <div class="wrapper header-main bg-section-blue">
             <div class="container">
                 <div class="row d-flex align-items-center justify-cotent-between">
                     <div class="col header-main-title">
@@ -37,20 +52,20 @@
                         <button
                             class="bg-primary-blue text-white border-0 rounded-pill mt-4 px-4 py-2">Cadastre-se</button>
                     </div>
-                    <div class="col d-flex justify-content-end">
-                        <img src="assets/img/image.png" alt="">
+                    <div class="col d-flex justify-content-end image">
+                        <img src="assets/img/image.png" id="home" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <main class="main py-4">
-        <section class="main-section">
+    <main class="main">
+        <section class="section-works py-5">
             <div class="conatiner">
                 <div class="section-title text-center mb-5">
                     <h2>Como funciona</h2>
                 </div>
-                <div class="row d-flex align-items-center justify-content-center m-0">
+                <div class="row d-flex align-items-center justify-content-center gap-5 m-0">
                     <div class="card border-0 p-0" style="width: 250px;">
                         <div class="d-flex align-items-center justify-content-center">
                             <img src="assets/img/icon-user.png" alt="icone de usuário">
@@ -65,7 +80,7 @@
                             <img src="assets/img/icon-loock.png" alt="icone de usuário">
                         </div>
                         <div class="card-body text-center">
-                            <div class="card-title h4">Crie conexões</div>
+                            <div class="card-title h4">100% gratuito</div>
                             <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consecteteu.</p>
                         </div>
                     </div>
@@ -81,9 +96,119 @@
                 </div>
             </div>
         </section>
+        <section class="section-app bg-section-blue py-5">
+            <div class="container">
+                <div class="row d-flex align-items-center justify-content-between">
+                    <div class="col app-text">
+                        <h1>Baixe nosso app para desfrutar mais!</h1>
+                        <p class="text-secondary mt-3 mb-4">Amet in elementum nulla scelerisque dui, egestas at. Elit
+                            consectetur turpis elementum amet
+                            vitae et etiam nec. Varius volutpat hac adipiscing tincidunt pretium.</p>
+                        <div class="row app-buttons">
+                            <div class="col"><img src="assets/img/download-play-store.png" alt=""></div>
+                            <div class="col"><img src="assets/img/download-app-store.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="col app-img d-flex justify-content-end">
+                        <img src="assets/img/img-app.png" alt="Imagem do app">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-plans py-5">
+            <div class="conatiner">
+                <div class="section-title text-center mb-5">
+                    <h2>Como funciona</h2>
+                    <div class="subtitle d-flex justify-content-center">
+                        <p class="text-secondary" style="max-width: 440px;">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-end justify-content-center gap-5 m-0">
+                    <div class="card card-secondary border-0 text-center py-5 px-4 rounded  " style="width: 320px;">
+                        <div class="card-title">
+                            <div class="title-text mb-3">
+                                <h3>Bronze</h3>
+                            </div>
+                            <div class="title-price">
+                                <h2 class="fw-bold fs-1">
+                                    <sup>R$</sup>28<span>/mês</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                lacinia mi quis euismod ultrices.</p>
+                            <button
+                                class="bg-primary-blue text-white fw-bold border-0 px-4 py-2 mt-4 rounded-pill w-100">Assinar</button>
+                        </div>
+                    </div>
+                    <div class="card card-primary border-0 text-center py-5 px-4 rounded " style="width: 320px;">
+                        <div class="card-title">
+                            <div class="title-text mb-5" id="card-primary" data-situation="Preferido">
+                                <h3>Prata</h3>
+                            </div>
+                            <div class="title-price">
+                                <h2 class="fw-bold fs-1">
+                                    <sup>R$</sup>57<span>/mês</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                lacinia mi quis euismod ultrices.</p>
+                            <button
+                                class="bg-primary-blue text-white fw-bold border-0 px-4 py-2 mt-4 rounded-pill w-100">Assinar</button>
+                        </div>
+                    </div>
+                    <div class="card card-secondary border-0 text-center py-5 px-4 rounded" style="width: 320px;">
+                        <div class="card-title">
+                            <div class="title-text mb-3">
+                                <h3>Ouro</h3>
+                            </div>
+                            <div class="title-price">
+                                <h2 class="fw-bold fs-1">
+                                    <sup>R$</sup>94<span>/mês</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                lacinia mi quis euismod ultrices.</p>
+                            <button
+                                class="bg-primary-blue text-white fw-bold border-0 px-4 py-2 mt-4 rounded-pill w-100">Assinar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-contact py-5">
+            <div class="conatiner">
+                <div class="section-title text-center mb-5">
+                    <h2>Contato</h2>
+                    <div class="subtitle d-flex justify-content-center">
+                        <p style="max-width: 440px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                            lacinia mi quis euismod ultrices.</p>
+                    </div>
+                </div>
+                <div class="section-body px-3">
+                    <form action="#">
+                        <div class="row d-flex align-items-center justify-content-center gap-4 m-0">
+                            <input type="email" placeholder="Seu melhor email">
+                            <input type="submit" class="bg-primary-blue text-white rounded-pill border-0 py-1 px-4"
+                                value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="text-center py-3">
+        <span class="h6">Rachi - Todos os direitos reservados.</span>
+    </footer>
 
     <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
