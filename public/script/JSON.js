@@ -1,6 +1,7 @@
-const content = document.getElementById('projetos-cotent');
+const projectsCotent = document.getElementById('projetos-content');
+const servicesContent = document.getElementById('services-content');
 
-let card = [
+let projects = [
     {
         title: 'Blog',
         image: 'Blog',
@@ -115,9 +116,28 @@ let card = [
     }
 ];
 
-card.map((item) => {
+let services = [
+    {
+        icon: 'bx-code',
+        text: 'Criação de sites',
+    },
+    {
+        icon: 'bxl-figma',
+        text: 'UI/UX Designer',
+    },
+    {
+        icon: 'bx-mobile-alt',
+        text: 'Sites responsivos',
+    },
+];
+
+let skills = [
+    
+];
+
+projects.map((item) => {
     let html = `
-    <div class="box">
+    <div class="box" data-aos="fade-right">
         <div class="box-img"><img src="public/img/${item.image}.png" alt=""></div>
         <div class="box-text">
             <h3>${item.title}</h3>
@@ -131,5 +151,18 @@ card.map((item) => {
     </div>    
     `;
 
-    content.insertAdjacentHTML("beforeend", html);
-})
+    projectsCotent.insertAdjacentHTML("beforeend", html);
+});
+
+services.map((item) => {
+    let html = `
+    <div class="box" data-aos="fade-right">
+        <div class="box-icon"><i class='bx ${item.icon}'></i></div>
+        <div class="box-text">
+            <h2>${item.text}</h2>
+        </div>
+    </div>
+    `;
+
+    servicesContent.insertAdjacentHTML("beforeend", html);
+});
