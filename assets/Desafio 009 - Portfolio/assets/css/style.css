@@ -1,0 +1,207 @@
+html
+{
+
+	scroll-padding-top: 200px;
+}
+
+body
+{
+	background: var(--dark);
+}
+
+.menu
+{
+	position: fixed;
+	top: 0; left: 50%;
+	max-width: 1200px; width: 100%;
+	padding: 30px 0;
+	transform: translateX(-50%);
+	color: var(--while);
+	background: var(--dark);
+	z-index: 1;
+}
+.menu .menu-logo
+{
+	font-size: 2rem;
+	font-weight: 700;
+}
+.menu .navbar a
+{
+	position: relative;
+	font-size: var(--size-subtitle);
+	color: var(--while);
+	margin-right: 20px;
+}
+.menu .navbar a:before
+{
+	content: '';
+	position: absolute;
+	width: 0; height: 3px;
+	bottom: 0; right: 0;
+	background: var(--green);
+	transition:  width .5s ease-in-out;
+}
+.menu .navbar a:hover:before,
+.menu .navbar a.active:before
+{
+	width: 100%; left: 0;
+}
+.menu .menu-buttons
+{
+	font-size: 2rem;
+}
+.menu .menu-buttons div
+{
+	cursor: pointer;
+}
+.menu .menu-buttons div.menu-btn
+{
+	display: none;
+}
+
+.header-content
+{
+	min-height: 100vh;
+	flex-wrap: wrap;
+	gap: 50px;
+}
+.header-content-conteudo 
+{
+	flex: 0 1 450px;
+}
+.header-content-conteudo h1
+{
+	color: var(--while);
+	font-size: 3em;
+	font-weight: 700;
+}
+.header-content-conteudo h1:after,
+.header-content-conteudo p:after
+{
+	content: '|';
+	margin-left: 10px;
+	animation: digitando .75s infinite;
+}
+.header-content-conteudo p
+{
+	margin: 20px 0 40px 0;
+	color: var(--gray);
+	font-size: var(--size-subtitle);
+	font-weight: 500;
+}
+.content-conteudo-buttons
+{
+	flex-wrap: wrap;
+	gap: 20px;
+}
+.header-content-img img
+{
+	max-width: 100%;
+}
+
+.sobremim-text
+{
+	max-width: 745px;
+	margin: auto;
+	font-size: var(--size-subtitle);
+	color: var(--gray);
+	font-weight: 400;
+	line-height: 32px;
+}
+.sobremim-boxs-infor
+{
+	flex-wrap: wrap;
+	gap: 50px;
+	margin-top: 50px;
+	justify-content: center;
+}
+.sobremim-boxs-infor .box
+{
+	width: 200px;
+	align-items: center;
+	flex-direction: column;
+}
+.sobremim-boxs-infor .box .box-icon
+{
+	width: 62px; height: 62px;
+	border-radius: 50%;
+	background: var(--gray-400);
+	color: var(--green);
+	font-size: 2rem;
+	margin-bottom: 15px;
+}
+
+.projetos-boxs .box,
+.serviços-boxs .box
+{
+	position: relative;
+	padding: 20px 25px;
+	background: var(--gray-200);
+}
+.projetos-boxs .box .box-img
+{
+	height: 150px;
+	background: var(--gray-400);
+	margin-bottom: 23px;
+	overflow: hidden;
+}
+.projetos-boxs .box .box-img img
+{
+	width: 100%; height: 100%;
+	object-fit: cover;
+	transition: transform .5s ease-in-out;
+}
+.projetos-boxs .box:hover .box-img img
+{
+	transform: scale(1.1);
+}
+.projetos-boxs .box .box-btn
+{
+	margin-top: 20px;
+	gap: 10px;
+}
+
+.serviços-boxs .box:before
+{
+	content: '';
+	position: absolute;
+	bottom: 0; left: 0;
+	width: 100%; height: 5px;
+	background: var(--green);
+}
+.serviços-boxs .box .box-icon
+{
+	font-size: 4rem;
+	color: var(--green);
+	margin-bottom: 20px;
+}
+.serviços-boxs .box .box-text h2
+{
+	color: var(--gray);
+	font-weight: 500;
+	font-size: var(--size-title);
+}
+
+.skills-boxs
+{
+	flex-wrap: wrap;
+	gap: 20px;
+}
+.skills-boxs .box
+{
+	width: 150px; height: 150px;
+	background: var(--gray-200);
+	color: var(--green);
+	font-size: 5rem;
+}
+
+footer
+{
+	background: var(--gray-200);
+	padding: 20px 0;
+	color: var(--while);
+}
+footer h3 a
+{
+	color: var(--green);
+}

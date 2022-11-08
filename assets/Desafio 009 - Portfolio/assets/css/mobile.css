@@ -1,0 +1,62 @@
+@media (max-width: 1200px)
+{
+	.menu
+	{
+		padding: 30px 20px;
+	}
+	.content-width
+	{
+		padding: 0 20px;
+	}
+}
+
+@media (max-width: 840px)
+{
+	.header-content
+	{
+		padding-top: 100px;
+	}
+}
+
+@media (max-width: 700px)
+{
+	.menu .navbar
+	{
+		position: absolute;
+		top: 100%; left: 0;
+		background: var(--dark);
+		padding: 0 0 20px 20px;
+		width: 100%;
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+	.menu .navbar.active
+	{
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		transition: clip-path .5s ease-in-out;
+	}
+	.menu .navbar a
+	{
+		display: block;
+		padding: 15px;
+	}
+	.menu .navbar a:before
+	{
+		position: absolute;
+		content: '';
+		width: 3px; height: 0;
+		bottom: 0; left: 0;
+		background: var(--green);
+		transition:  height .5s ease-in-out;
+	}
+	.menu .navbar a:hover:before,
+	.menu .navbar a.active:before
+	{
+		width: 3px;
+		height: 100%; top: 0;
+	}
+	.menu .menu-buttons div.menu-btn
+	{
+		display: initial;
+		margin-left: 20px;
+	}
+}
