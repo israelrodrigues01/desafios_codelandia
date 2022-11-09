@@ -1,3 +1,4 @@
+const inforContent = document.getElementById('infor-content');
 const projectsCotent = document.getElementById('projetos-content');
 const servicesContent = document.getElementById('services-content');
 
@@ -132,8 +133,57 @@ let services = [
 ];
 
 let skills = [
-    
+    {
+        icon: 'bx-smile',
+        link: 'index.html',
+        title: 'Meu Nome',
+        desc: 'Israel Rodrigues',
+    },
+    {
+        icon: 'bxl-linkedin',
+        link: 'https://www.linkedin.com/in/israel-rodrigues/',
+        title: 'LinkedIn',
+        desc: 'Israel Rodrigues',
+    },
+    {
+        icon: 'bxl-github',
+        link: 'https://github.com/israelrodrigues01',
+        title: 'GitHub',
+        desc: 'israelrodrigues01',
+    },
+    {
+        icon: 'bxl-gmail',
+        link: 'mailto:ciceroisrael428@gmail.com',
+        title: 'E-mail',
+        desc: 'ciceroisrael428@gmail.com',
+    },
+    {
+        icon: 'bxl-linkedin',
+        link: 'https://www.linkedin.com/in/israel-rodrigues/',
+        title: 'LinkedIn',
+        desc: 'Israel Rodrigues',
+    },
+    {
+        icon: 'bxl-linkedin',
+        link: 'https://wa.me/988461185',
+        title: 'Whatsapp',
+        desc: '(88) 98846-1185',
+    },
 ];
+
+skills.map((item) => {
+    let html = `
+    <a href="${item.link}" class="box flex" data-aos="fade-right">
+        <div class="box-icon flex f-c-c"><i class='bx ${item.icon}'></i></div>
+        <span class="box-text text-center">
+            <h3>${item.title}</h3>
+            <p>${item.desc}</p>
+        </span>
+    </a>
+    `;
+
+    inforContent.insertAdjacentHTML("beforeend", html);
+})
 
 projects.map((item) => {
     let html = `
