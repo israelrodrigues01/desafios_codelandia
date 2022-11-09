@@ -6,6 +6,7 @@
 	font-family: 'DM Sans', sans-serif;
 	box-sizing: border-box;
 	text-decoration: none;
+	transition: background-color .5s ease-in-out;
 }
 
 :root
@@ -16,7 +17,7 @@
 	--gray-200: #333333;
 	--gray-400: #212121;
 	--dark: #171717;
-
+	
 	--size-title: 32px;
 	--size-subtitle: 18px;
 	--size-text: 14px;
@@ -27,9 +28,7 @@ body.while-mode
 	--while: #171717;
 	--dark: #F9F9F9;
 	--gray-200: #EBE9EA;
-	--gray-400: #bbb;
-
-	transition: all .5s;
+	--gray-400: #333;
 }
 
 .content-width

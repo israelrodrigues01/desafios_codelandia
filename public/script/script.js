@@ -1,13 +1,19 @@
 const btnMode = document.querySelector('.menu-btn-mode');
 const btnMenu = document.querySelector('.menu-btn');
+const allLinks = document.querySelectorAll('.navbar a');
+
+btnMenu.addEventListener('click', closeMenu);
+allLinks.forEach((link) => {
+  link.addEventListener('click', closeMenu);
+})
 
 btnMode.onclick = () =>
 {
 	document.body.classList.toggle('while-mode');
 }
-btnMenu.onclick = () =>
-{
-	document.querySelector('.navbar').classList.toggle('active');
+
+function closeMenu(){
+  document.querySelector('.navbar').classList.toggle('active');
 }
 
 const titleHeader = document.querySelector('.header-content-conteudo h1');
