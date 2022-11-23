@@ -112,8 +112,8 @@ let projects = [
         image: 'to-do_list',
         technology: "HTML, CSS e JS.",
         desc: 'Home Page',
-        demo: "https://israelrodrigues01.github.io/homepage-pespi/",
-        repository: 'https://github.com/israelrodrigues01/homepage-pespi',
+        demo: "https://israelrodrigues01.github.io/to-do-list/",
+        repository: 'https://github.com/israelrodrigues01/to-do-list',
     }
 ];
 
@@ -158,13 +158,7 @@ let skills = [
         desc: 'ciceroisrael428@gmail.com',
     },
     {
-        icon: 'bxl-linkedin',
-        link: 'https://www.linkedin.com/in/israel-rodrigues/',
-        title: 'LinkedIn',
-        desc: 'Israel Rodrigues',
-    },
-    {
-        icon: 'bxl-linkedin',
+        icon: 'bxl-whatsapp',
         link: 'https://wa.me/988461185',
         title: 'Whatsapp',
         desc: '(88) 98846-1185',
