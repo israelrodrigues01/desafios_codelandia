@@ -1,7 +1,10 @@
 import '.././Main.sass'
 
-function Sobre(){
-	return(
+import img2 from '../../../img/img2.png'
+import img3 from '../../../img/img3.png'
+
+function Sobre() {
+	return (
 		<section className="section-sobre">
 			<div className="content-width">
 				<div className="content-sobre">
@@ -18,19 +21,19 @@ function Sobre(){
 							a
 						</h2>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis justo sem. 
-							onec consequat, nunc a dapibus dapibus, justo dolor tristique tortor, sit amet 
-							incidunt lorem nisl at ex. Cras dolor purus, varius in euismod pretium, finibus nec 
-							i. Curabitur aliquam pharetra lectus in pharetra. Nullam viverra elementum neque 
-							uis fermentum. 
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis justo sem.
+							onec consequat, nunc a dapibus dapibus, justo dolor tristique tortor, sit amet
+							incidunt lorem nisl at ex. Cras dolor purus, varius in euismod pretium, finibus nec
+							i. Curabitur aliquam pharetra lectus in pharetra. Nullam viverra elementum neque
+							uis fermentum.
 						</p>
 						<button>Ler mais</button>
 
 						<div className="img-flutuante img2">
-							<img src="src/assets/img/img2.png" alt="" />
+							<img src={img2} alt="" />
 						</div>
 						<div className="img-flutuante img3">
-							<img src="src/assets/img/img3.png" alt="" />
+							<img src={img3} alt="" />
 						</div>
 					</div>
 				</div>
