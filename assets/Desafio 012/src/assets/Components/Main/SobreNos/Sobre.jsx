@@ -1,6 +1,7 @@
 import '.././Main.sass'
 
 import restaurant from '../../../img/restaurant.png'
+import img1 from '../../../img/img1.png'
 import img2 from '../../../img/img2.png'
 import img3 from '../../../img/img3.png'
 
@@ -11,7 +12,7 @@ function Sobre() {
 				<div className="content-sobre">
 					<div className="content-sobre_img">
 						<img src={restaurant} alt="" />
-						<img className="img-flutuante" src="src/assets/img/img1.png" alt="" />
+						<img className="img-flutuante" src={img1} alt="" />
 					</div>
 					<div className="content-sobre_conteudo">
 						<h2 className="titulo">
